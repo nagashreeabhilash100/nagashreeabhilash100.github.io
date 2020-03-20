@@ -19,7 +19,7 @@
 	    	}
 	    	let json = JSON.stringify(request)
 	    	console.log(json);
-	        JSToNativeBridge.window.webkit.messageHandlers.JSToNativeBridge.postMessage(json);
+	        window.webkit.messageHandlers.JSToNativeBridge.postMessage(json);
 	    }
 	    function JSMethodToSendResponse(response){
 	    	let json = JSON.stringify(response)
